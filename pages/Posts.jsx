@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 const Post = props => {
 
     const { title, id } = useRouter().query
+    console.log('passei por aqui post')
 
     return (
         <Layout>

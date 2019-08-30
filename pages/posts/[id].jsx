@@ -6,9 +6,10 @@ import axios from 'axios'
 
 const Posts = props => {
 
-    const { id } = useRouter().query
     const [state, setState] = useState({})
-
+    const { id } = useRouter().query
+    
+    console.log('passei por aqui[id]')
     useEffect(_ => {
         !!id && axios.get(`https://jsonplaceholder.typicode.com/todos/${id}`)
             .then(resp => setState(resp.data))

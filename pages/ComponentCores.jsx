@@ -17,6 +17,8 @@ const ComponentCOres = props => {
         telapreta: false
     })
 
+    console.log('passei por aqui cores')
+
     const mudarCor = _ => {
         if (state.c1sty === 'red') {
             setState({

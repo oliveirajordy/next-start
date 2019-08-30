@@ -14,6 +14,8 @@ const Index = props => {
         }, 1500)
     })
 
+    console.log('passei por aqui index')
+
     return (
         <Layout>
             <nav>
@@ -22,9 +24,10 @@ const Index = props => {
             </nav>
             Home
             <ul>
-                <li><PostLink link="/post?title=ola-mundo&id=00" title="Ola Mundo" /></li>
-                <li><PostLink link="/post?title=hello-world&id=11" title="hello world" /></li>
-                <li><PostLink link="/post?title=ohayo-sekai&ud=22" title="ohayo sekai" /></li>
+                <li><PostLink link="/posts?title=ola-mundo&id=00" title="Ola Mundo" /></li>
+                <li><PostLink link="/posts?title=hello-world&id=11" title="hello world" /></li>
+                <li><PostLink link="/posts?title=ohayo-sekai&id=22" title="ohayo sekai" /></li>
+                <li><PostLink link="/posts/pp?id=5" title="ohayo sekai" /></li>
             </ul>
             <ul>
                 <li><SubPostLink linktemplete="/posts/[id]" link="/posts/1" title="sub post 1" /></li>
